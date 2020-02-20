@@ -1,13 +1,16 @@
 .input {
   display: flex;
-  height: 4em;
+  height: 80px;
+  width: 80px;
   flex: 1;
-  background-color: #000;
-  outline: 1px soilid #888;
-  color: #fff;
+  background-color: #f0f0f0;
+  margin-bottom: 5px;
+  color: #000;
   justify-content: flex-end;
   padding: 0.5em;
-  font-weight: bold;
-  font-size: 1.4em;
-  align-items: center;
+  font-weight: 300;
+  font-size: 3em;
+  align-items: flex-end;
+  border: 1px solid #a3d1df;
+  border-radius: 30px;
 }

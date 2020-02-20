@@ -1,18 +1,24 @@
 .button {
-  height: 4em;
-  width: 100px;
+  height: 3em;
+  width: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: lighter;
+  font-weight: 500;
   font-size: 1.4em;
-  background-color: #e0e1e6;
-  color: #888;
+  background-color: #c5c5c5;
+  color: #fff;
   flex: 1;
-  outline: 1px solid #888;
+
+  cursor: pointer;
+  margin: 5px;
+  border: 1px solid #f0f0f0;
+  border-radius: 50px;
 }
 
 .operator {
   background-color: #50a6c2;
-  color: white;
+  border: 1px solid #a3d1df;
+  border-radius: 50px;
+  color: #fff;
 }

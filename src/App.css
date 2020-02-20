@@ -4,7 +4,9 @@
   align-items: center;
   height: 100vh;
   width: 100%;
-  margin-top: 100px;
+
+  background: linear-gradient(rgba(27, 57, 66, 0.9), rgba(20, 20, 20, 0.8)),
+    url("math.jpg");
 }
 .calc.wrapper {
   width: 400px;

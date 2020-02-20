@@ -13,11 +13,10 @@ class App extends React.Component {
       currentNumber: "",
       operator: ""
     };
-    this.addtoInput = this.addZeroToInput.bind(this);
   }
-  addtoInput(val) {
+  addToInput = val => {
     this.setState({ input: this.state.input + val });
-  }
+  };
 
   addZeroToInput = val => {
     //if this state.input is not empty then add zero
@@ -39,22 +38,22 @@ class App extends React.Component {
 
   add = () => {
     this.setState.prevoiusNumber = this.state.input;
-    this.setState({ input: " " });
+    this.setState({ input: "" });
     this.setState.operator = "plus";
   };
   substract = () => {
     this.setState.prevoiusNumber = this.state.input;
-    this.setState({ input: " " });
+    this.setState({ input: "" });
     this.setState.operator = "substract";
   };
   multiply = () => {
     this.setState.prevoiusNumber = this.state.input;
-    this.setState({ input: " " });
+    this.setState({ input: "" });
     this.setState.operator = "multiply";
   };
   divide = () => {
     this.setState.prevoiusNumber = this.state.input;
-    this.setState({ input: " " });
+    this.setState({ input: "" });
     this.setState.operator = "divide";
   };
 
@@ -99,13 +98,13 @@ class App extends React.Component {
             <Button handleClick={this.addToInput}>7</Button>
             <Button handleClick={this.addToInput}>8</Button>
             <Button handleClick={this.addToInput}>9</Button>
-            <Button handleClick={this.divide}>/</Button>
+            <Button handleClick={this.divide}>÷</Button>
           </div>
           <div className="row">
             <Button handleClick={this.addToInput}>4</Button>
             <Button handleClick={this.addToInput}>5</Button>
             <Button handleClick={this.addToInput}>6</Button>
-            <Button handleClick={this.multiply}>*</Button>
+            <Button handleClick={this.multiply}>×</Button>
           </div>
           <div className="row">
             <Button handleClick={this.addToInput}>1</Button>
@@ -120,7 +119,7 @@ class App extends React.Component {
             <Button handleClick={this.substract}>-</Button>
           </div>
           <div className="row">
-            <ClearButton handleClear={this.clearInput}>Clear</ClearButton>
+            <ClearButton handleClear={this.clearInput}>CLEAR</ClearButton>
           </div>
         </div>
       </div>
