@@ -25,7 +25,7 @@ class App extends React.Component {
       <div className="App">
         <div className="cal-wrapper">
           <div className="row">
-            <Input>{this.state.input}</Input>
+            <Input>{this.state.input === "" ? "0" : this.state.input}</Input>
           </div>
           <div className="row">
             <Button handleClick={this.addToInput}>7</Button>
